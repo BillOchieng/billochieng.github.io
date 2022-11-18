@@ -2,6 +2,5 @@
     "Home": "fa-home",
     "About": "fa-user",
     "Projects": "fa-eye",
-    "Contact": "fa-envelope",
-    "Archive": "fa-archive"
+    "Contact": "fa-envelope"
 }
