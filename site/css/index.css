@@ -270,3 +270,11 @@ a[href].direct-link:focus:visited,
 :hover>a[href].direct-link:visited {
   color: rgb(75, 31, 31);
 }
+
+/*grid container */
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+
+}
