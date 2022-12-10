@@ -10,10 +10,16 @@ eleventyNavigation:
 .w3-container:before, w3-container:after {
   content: unset;
 }
+
+@media only screen and (max-width: 600px) {
+  header {
+    display:block;
+  }
+}
 </style>
-<header class="w3-container w3-padding-32 w3-center w3-black" id="home" style = "display: grid; grid-template-columns: 50% auto; grid-column-gap: 2%;">
+<header class="w3-container w3-padding-32 w3-center w3-black" id="home" style = "display: grid; grid-template-columns: 50% auto; font-size: 3.5vw; grid-column-gap: 2%;">
   <div>
-    <h1 class="w3-jumbo"><span class="w3-hide-small">imagination </span>running wild</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Imagination </span>running wild</h1>
     <p>Computer Science and Economics student, Certified Insurance Agent</p>
   </div>
   <img src="{{ 'img/w3images/man_smoke.jpg' | url }}" alt="boy" class="w3-image" width="480">
@@ -171,13 +177,13 @@ eleventyNavigation:
     <h2 class="w3-text-light-grey">Projects</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>My personal Portfolio</p>
-    <p><a href="https://github.com/BillOchieng/portfolio-bill">project att</a></p>
+    <p><a href="https://github.com/BillOchieng/billochieng.github.io">personal website</a></p>
     <p>CPU Virtualization</p>
     <p><a href="https://github.com/BillOchieng/portfolio-bill">project att</a></p>
     <p>API reference documentation</p>
     <p><a href="https://github.com/BillOchieng/portfolio-bill">project att</a></p>
-    <p>Tic Tac Toe Game</p>
-    <p><a href="https://github.com/BillOchieng/portfolio-bill">project att</a></p>
+    <p>Simon Says Game</p>
+    <p><a href="https://github.com/BillOchieng/Simon-Says-Game-Project">Simon Says Game</a></p>
     <p> command-line bash/zsh</p>
     <p><a href="https://github.com/BillOchieng/portfolio-bill">project att</a></p>
     <p>Automated-Grading-Plugin</p>
