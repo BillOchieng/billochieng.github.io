@@ -1,79 +1,74 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5702ba89-7242-490e-b04d-e4a691faced5/deploy-status)](https://app.netlify.com/sites/fernfolio/deploys)
+# Dark-Portfolio-Template-11ty
 
-# Fernfolio
-The super simple portfolio template built with [Eleventy](https://www.11ty.io/) and [Netlify CMS](https://www.netlifycms.org/)
+A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+Uses the W3CSS template "Dark Portfolio Template"
 
-<img width="1280" alt="fernfolio screenshot" src="https://raw.githubusercontent.com/TylerMRoderick/fernfolio-11ty-template/master/fernfolio-preview.png">
+[![Build Status](https://travis-ci.com/jmschrack/Dark-Portfolio-Template-11ty.svg?branch=dev)](https://travis-ci.org/jmschrack/dark-portfolio-template-11ty)
 
-### <pre>🖥  [Demo](https://fernfolio.netlify.app/)</pre>
+## Demos
 
-## 🤔 What is this?
-An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of deploying a beautiful portfolio and blog. Launch your site in minutes!
-
-Based on the [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate), but modified to perfectly fit the needs of a modern technical porfolio.
-
-## ✨ Features
-* Built in support for [Netlify CMS](https://www.netlifycms.org/) with editor previews
-* Customizable blog and project pages with tag support
-* Working contact form powered by [Netlify Forms](https://www.netlify.com/products/forms/)
-* Super fast page render and high lighthouse scores
-* Uses Markdown for content files and Nunjucks for layouts
-* 100% Javascript framework free
-* Continuous Deployment workflow via [Netlify](https://www.netlify.com/)
-* Base styles powered by [Sakura](https://github.com/oxalorg/sakura) classless css framework
-* Vanilla css for custom styles (keep it simple)
+* [GitHub Pages](https://jmschrack.github.io/Dark-Portfolio-Template-11ty/)
 
 
-## 🚀 Quick Start
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TylerMRoderick/fernfolio-11ty-template&stack=cms)
+## Getting Started
 
-### 1. Click the "Deploy to Netlify" button above
-This will clone this repo to your github account and will deploy a copy of the demo website to your Netlify
-account (you can create an account during this process if you don't have one)
+### 1. Clone this Repository
 
-### 2. Setup authentication
-
-After deploying this project, Netlify Identity will add you as a CMS user and
-will email you an invite. Hit the "Accept the invite" link and this should take you to the deployed site. From there, you can add your password to finish user setup.
-
-### 3. Edit some content
-Now that you are added as a CMS user, add `/admin` to the end of your site url, and log in using your new credentials. You should now see the content editor interface. Now you can start editing content! Any changes to your new repo will auto-deploy a new version to netflify. Cool huh?
-
-### 4. Setup local environment
-- Clone the repo locally `git clone https://github.com/TylerMRoderick/fernfolio-11ty-template.git`
-- Navigate to root folder `cd your-site`
-- Install the goods `npm install`
-- Run it `npm start`
-- You should now be able to see everything running on localhost:8080
-- Add some changes (view [theme customizations](https://fernfolio.netlify.app/posts/theme-customizations/) for some options) 
-- Push your changes to github and an auto-deploy should be triggered
-
-## 💻 Development Scripts
-
-**`npm start`**
-
-> Run 11ty with hot reload at localhost:8080
-
-**`npm run build`**
-
-> Generate minified production build
-
-Use this as the "Publish command" if needed by hosting such as Netlify.
-
-Checkout the Eleventy [Command Line Usage docs](https://www.11ty.dev/docs/usage/) for more options 
+```
+git clone https://github.com/jmschrack/Dark-Portfolio-Template-11ty.git my-blog-name
+```
 
 
-## 🎩 Common issues
+### 2. Navigate to the directory
 
-If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
-as the token generated using the deploy to Netlify button can only access public repositories. To
-regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
-section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
-see a text link to "Generate access token in GitHub".
+```
+cd my-blog-name
+```
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
 
-## Bug reports, feature requests, etc
+### 3. Install dependencies
 
-This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR or issue.
+```
+npm install
+```
+
+### 4. Edit _data/metadata.json
+
+### 5. Run Eleventy
+
+```
+npx eleventy
+```
+
+Or build and host locally for local development
+```
+npx eleventy --serve
+```
+
+Or build automatically when a template changes:
+```
+npx eleventy --watch
+```
+
+Or in debug mode:
+```
+DEBUG=* npx eleventy
+```
+
+### Implementation Notes
+
+* `about/index.md` shows how to add a content page.
+* `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
+* Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
+* Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
+	* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
+* The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
+* This example uses three layouts:
+  * `_includes/layouts/base.njk`: the top level HTML structure
+  * `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
+  * `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
+* `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
+
+* The latest 6 blog posts with the "photo" tag wil be used in the photo gallery.
