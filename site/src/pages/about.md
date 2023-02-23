@@ -45,7 +45,7 @@ See for yourself, the code is open source. I'll add the link ,it is also availab
 
 Yes, I have a varied set of career interests which include software engineering, data science, financial analysis, finance, insurance, Economics and the application of machine learning in computer security within financial institutions.
 
-#### What are you most excited about at the moment?
+### What are you most excited about at the moment?
 
 Machine Learning
 Bitcoin
@@ -56,7 +56,7 @@ Implementing reusable design systems
 Striking the delicate balance between developer experience, user experience, and business needs
 Full-Stack Software Engineering
 
-#### What are are your favorite software tools?
+### What are are your favorite software tools?
 
 Code Editor: VS Code
 Hosting: Netlify & Digital Ocean
@@ -65,3 +65,16 @@ Browser: Brave
 API testing: Insomnia
 Notes: Bear
 Music: Spotify
+
+#### Interfaces & Softwares
+
+Heroku
+Visual Studio Code
+Figma
+Arduino
+Hugo
+Excalidraw
+Microsoft Excel
+Microsoft PowerPoint
+Bash
+Jupyter
