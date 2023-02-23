@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: Bill Ochieng
 subtitle: ""
 metaDescription: This page is all about me
 date: 2017-01-01T00:00:00.000Z
@@ -9,23 +9,59 @@ eleventyNavigation:
   order: 1
 ---
 
-### What is Fernfolio?
-An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of creating a beautiful portfolio and blog. Tightly integrated with [Netlify CMS](https://www.netlifycms.org/) for flexible, Git-powered content management.
 
-### Why create this?
+#### About Me
 
-**Reason #1:** I wanted a portfolio that was simple, fast, accessible, and integrated with a git-powered cms. Existing templates didn't perfectly fit my needs, so I decided to build my own template.
+### Computer Science and Economics student
 
-**Reason #2:** I wanted to learn more about [Eleventy](https://www.11ty.dev/) and static site generators in general. Building Fernfolio was a good excuse to dive deeper on that topic.
+#### Imagination running wild
 
-### How do I edit content?
-Once your site is deployed and configured, add `/admin` to the end of the url (not using localhost) and hit refresh. From there, you should be able to login and see see the content management dashboard. You should be able to change most content here (e.g. page text, images, logo, articles, projects, etc.).
+Hi, thank you for visiting my site. My name is Bill Ochieng and I am currently a third-year student at Allegheny College double majoring in Computer Science and Economics. I live in Solon, Ohio but I'm originally from Nairobi, Kenya. At Allegheny College I am a Resident Advisor where my job is to help create a supportive and safe environment for students living in residence halls and other student housing. I enjoy playing chess and I'm also the media manager for Allegheny College Chess Club. In Ohio, I am a certified health insurance agent with Aflac Inc. I have a yellow belt in Tang Soo Do!
 
-### Further customizations
-If you want to take your customizations further, you will need to modify the project source code. Some customizations, like changing theme colors and fonts, are straightforward (those can be modified in the `variables.scss` file). Other customizations will require more in-depth solutions.
+## FAQs
 
-If you get stuck or just have a question, feel free to create a [Github issue](https://github.com/TylerMRoderick/fernfolio-11ty-template/issues) and I will try to point you in the right direction.
+### Where do you live?
 
-Thanks for checking out Fernfolio 👋 - [Tyler M. Roderick](https://www.tylerroderick.com/)
+📍 Solon, Ohio
 
-![Fern in Hand](/src/assets/img/fern-forest.jpeg "Fern in Hand")
+### How do I contact you?
+
+Fill out the form on my contact page and your message will be forwarded to my email. I read every message.Lets get in touch. Send me a message.
+
+### What is your preferred tech stack?
+
+I'm a big believer that software is meant to solve problems, languages and frameworks are simply tools to accomplish that. With strong fundamentals, engineers can quickly grasp new tools as needed. With that said, I do have a few favorites:
+
+Languages: Python, Java, Golang, C , R , Lox, HTML & JavaScript
+Frontend: React, Vue, & TailwindCSS
+Backend: Node & Express
+Database: MongoDB
+
+### How did you build this site?
+
+See for yourself, the code is open source. I'll add the link ,it is also available in my GitHub.
+
+### Career Interests if any ?
+
+Yes, I have a varied set of career interests which include software engineering, data science, financial analysis, finance, insurance, Economics and the application of machine learning in computer security within financial institutions.
+
+#### What are you most excited about at the moment?
+
+Machine Learning
+Bitcoin
+Fraud Detection
+BlockChain
+Building performant and maintainable web applications
+Implementing reusable design systems
+Striking the delicate balance between developer experience, user experience, and business needs
+Full-Stack Software Engineering
+
+#### What are are your favorite software tools?
+
+Code Editor: VS Code
+Hosting: Netlify & Digital Ocean
+Terminal: iTerm2
+Browser: Brave
+API testing: Insomnia
+Notes: Bear
+Music: Spotify
