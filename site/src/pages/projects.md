@@ -38,6 +38,7 @@ Golang
 C
 R
 Git Flow
+SQL
 MkDocs
 Web Dev & Web Design
 HTML
