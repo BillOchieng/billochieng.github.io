@@ -47,14 +47,14 @@ Yes, I have a varied set of career interests which include software engineering,
 
 ### What are you most excited about at the moment?
 
-Machine Learning
-Bitcoin
-Fraud Detection
-BlockChain
-Building performant and maintainable web applications
-Implementing reusable design systems
-Striking the delicate balance between developer experience, user experience, and business needs
-Full-Stack Software Engineering
+Machine Learning for Predictive Analytics
+Cryptocurrency and Blockchain Technology
+Fraud Detection and Prevention in Financial Transactions and Insurance Claims
+Decentralized Applications (dApps) using Blockchain
+Building Scalable and Resilient Web Applications
+Implementing Design Systems for Consistent User Interfaces
+Balancing Developer Experience, User Experience, and Business Needs with Agile Methodologies
+Full-Stack Development with Modern Frameworks and Libraries
 
 ### What are are your favorite software tools?
 
