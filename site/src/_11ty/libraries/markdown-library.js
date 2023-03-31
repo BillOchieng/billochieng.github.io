@@ -1,5 +1,5 @@
 let markdownIt = require('markdown-it');
-let markdownItAnchor = require('markdown-it-anchor');
+let anchor = require('markdown-it-anchor');
 const Image = require('@11ty/eleventy-img');
 
 // Customize Markdown library and settings
@@ -7,23 +7,22 @@ let markdown = markdownIt({
   html: true,
   breaks: true,
   linkify: true
-}).use(markdownItAnchor, { permalink: false });
+}).use(anchor, {
+  permalink: anchor.permalink.linkInsideHeader({
+    symbol: '#',
+    placement: 'before'
+  })
+});
 
 
 // Add responsive image suppport to markdown files
 // borrowed from: https://tomichen.com/blog/posts/20220416-responsive-images-in-markdown-with-eleventy-image
 markdown.renderer.rules.image = function (tokens, idx) {
   const token = tokens[idx];
-  let imgSrc = token.attrGet('src');
+  let imgSrc = `.${token.attrGet('src')}`;
   const imgAlt = token.content;
   const imgTitle = token.attrGet('title');
-
   const htmlOpts = { alt: imgAlt, loading: 'lazy', decoding: 'async' };
-
-  if (imgSrc.startsWith('/assets')) {
-    imgSrc = 'src' + imgSrc;
-  }
-
   const parsed = (imgTitle || '').match(
     /^(?<skip>@skip(?:\[(?<width>\d+)x(?<height>\d+)\])? ?)?(?:\?\[(?<sizes>.*?)\] ?)?(?<caption>.*)/
   ).groups;

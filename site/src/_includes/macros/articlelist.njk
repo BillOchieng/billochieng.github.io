@@ -7,7 +7,7 @@
         {% if article.url == url %} data-current="current item"{% endif %}
       >
         <a class="article-card__link" href="{{ article.url | url }}">
-          <h6 class="article-card__title">{{ article.data.title }}</h6>
+          <h5 class="article-card__title">{{ article.data.title }}</h5>
           {% if article.data.summary %}
             <p class="article-card__summary">
               {{ article.data.summary }}
@@ -16,7 +16,7 @@
           {% if article.data.tags and show_tags %}
             <p class="tag-list">
               {% for tag in article.data.tags %}
-                {%- if tag != "article" -%}
+                {%- if tag != "post" -%}
                   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
                 <a class="tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
                 {%- endif -%}

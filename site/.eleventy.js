@@ -1,22 +1,26 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const imageShortcode = require('./src/_11ty/shortcodes/image-shortcode');
 const markdownLibrary = require('./src/_11ty/libraries/markdown-library');
 const minifyHtml = require('./src/_11ty/utils/minify-html');
 const markdownFilter = require('./src/_11ty/filters/markdown-filter');
+const svgFilter = require('./src/_11ty/filters/svg-filter');
 const browserSyncConfig = require('./src/_11ty/utils/browser-sync-config');
 const { readableDateFilter, machineDateFilter } = require('./src/_11ty/filters/date-filters');
 
 module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Filters
   eleventyConfig.addFilter('markdown', markdownFilter);
   eleventyConfig.addFilter('readableDate', readableDateFilter);
   eleventyConfig.addFilter('machineDate', machineDateFilter);
+  eleventyConfig.addFilter('svg', svgFilter);
 
   // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode('Image', imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
 
   // Libraries
   eleventyConfig.setLibrary('md', markdownLibrary);

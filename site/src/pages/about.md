@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: Bill Ochieng
 subtitle: ""
 metaDescription: This page is all about me
 date: 2017-01-01T00:00:00.000Z
@@ -8,16 +8,73 @@ eleventyNavigation:
   key: About
   order: 1
 ---
-#### Why Create This?
 
-I wanted to develop a portfolio that was simple, fast, accessible, and can be modified without opening up a code editor.
 
-First, I needed a static site generator. This led me to [Eleventy](https://www.11ty.dev/). This project is great because it is is simple, powerful, written in javascript, and framework free.
+#### About Me
 
-Next, I wanted auto deployments and a git-powered CMS. [Netlify](https://www.netlify.com/) and their suite of tools seemed perfect.
+### Computer Science and Economics student
 
-I found a few good starter projects using these technologies, but was overall unhappy with the current options. That led me to develop Fernfolio. The goal was not to create a technical masterpiece, but to create a beautiful portfolio with minimal overhead/complexity. Something that just works.
+#### Imagination running wild
 
-This project is open source so that hopefully someone else can use this as a template (or reference) in building their own site. Technical details can be found on the [Github repo](https://github.com/TylerMRoderick/fernfolio-11ty-template) and some customization instructions can be found [here](/posts/theme-customizations/).
+Hi, thank you for visiting my site. My name is Bill Ochieng and I am currently a third-year student at Allegheny College double majoring in Computer Science and Economics. I live in Solon, Ohio but I'm originally from Nairobi, Kenya. At Allegheny College I am a Resident Advisor where my job is to help create a supportive and safe environment for students living in residence halls and other student housing. I enjoy playing chess and I'm also the media manager for Allegheny College Chess Club. In Ohio, I am a certified health insurance agent with Aflac Inc. I have a yellow belt in Tang Soo Do!
 
-![Fern in Hand](/assets/img/fern-in-hand.jpeg "Fern in Hand")
+## FAQs
+
+### Where do you live?
+
+📍 Solon, Ohio
+
+### How do I contact you?
+
+Fill out the form on my contact page and your message will be forwarded to my email. I read every message.Lets get in touch. Send me a message.
+
+### What is your preferred tech stack?
+
+I'm a big believer that software is meant to solve problems, languages and frameworks are simply tools to accomplish that. With strong fundamentals, engineers can quickly grasp new tools as needed. With that said, I do have a few favorites:
+
+Languages: Python, Java, Golang, C , R , Lox, HTML & JavaScript
+Frontend: React, Vue, & TailwindCSS
+Backend: Node & Express
+Database: MongoDB
+
+### How did you build this site?
+
+See for yourself, the code is open source. I'll add the link ,it is also available in my GitHub.
+
+### Career Interests if any ?
+
+Yes, I have a varied set of career interests which include software engineering, data science, financial analysis, finance, insurance, Economics and the application of machine learning in computer security within financial institutions.
+
+### What are you most excited about at the moment?
+
+Machine Learning for Predictive Analytics
+Cryptocurrency and Blockchain Technology
+Fraud Detection and Prevention in Financial Transactions and Insurance Claims
+Decentralized Applications (dApps) using Blockchain
+Building Scalable and Resilient Web Applications
+Implementing Design Systems for Consistent User Interfaces
+Balancing Developer Experience, User Experience, and Business Needs with Agile Methodologies
+Full-Stack Development with Modern Frameworks and Libraries
+
+### What are are your favorite software tools?
+
+Code Editor: VS Code
+Hosting: Netlify & Digital Ocean
+Terminal: iTerm2
+Browser: Brave
+API testing: Insomnia
+Notes: Bear
+Music: Spotify
+
+#### Interfaces & Softwares
+
+Heroku
+Visual Studio Code
+Figma
+Arduino
+Hugo
+Excalidraw
+Microsoft Excel
+Microsoft PowerPoint
+Bash
+Jupyter
